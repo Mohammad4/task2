@@ -1,8 +1,23 @@
+body {
+  min-height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0;
+    margin: 0; 
+
+}
 header {
+  left: 50%;
   display: flex;
   align-items: center;
+  justify-self: center;
+  align-self: center;
+ 
   margin-top: 84px;
-  margin-left: 300px;
+  margin-left:-350px;
+  margin-bottom: 250px;
+
   .stay-image {
     z-index: -1;
     background-image: url("../images/7.PNG");
@@ -17,7 +32,7 @@ header {
     font-size: 50px;
     color: rgb(76, 80, 87);
     margin-left: 31px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding-top: 40px;
   }
   p {
@@ -43,7 +58,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1300px) {
   header {
     display: flex;
     flex-direction: column;
@@ -66,6 +81,98 @@ header {
     }
   }
 
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 382px;
+  width: 100%;
+  outline: yellow;
+  border: none;
+  background-size: 100% auto;
+  background-image: linear-gradient(
+      rgba(45, 48, 51, 0.7),
+      rgba(45, 48, 51, 0.7)
+    ),
+    url("../images/mountain.jpg");
+
+  .round-button {
+    width: 160px;
+    height: 53px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    background-color: rgb(60, 63, 65);
+    padding: 0;
+    border: none;
+    color: white;
+    outline: none;
+  }
+  .submitit {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 45px;
+      margin-bottom: -15px;
+      color: white;
+    }
+
+    h6 {
+      margin-bottom: 50px;
+      color: white;
+    }
+
+    .texts {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      color: rgb(182, 175, 175);
+      margin-bottom: 30px;
+      font-size: 13px;
+      .text1 {
+        margin-left: auto;
+        order: 3;
+        .right {
+          margin-right: 50px;
+        }
+      }
+
+      .text2 {
+        margin-right: auto;
+        order: 2;
+        .left {
+          margin-left: 50px;
+        }
+      }
+    }
+
+    input {
+      outline: none;
+      border: 0;
+      width: 215px;
+      background: transparent;
+      background-image: linear-gradient(
+        to right,
+        rgb(182, 175, 175),
+        rgb(182, 175, 175)
+      );
+      background-position: 5px calc(100% - 5px);
+      background-size: calc(100% - 10px) 2px;
+      background-repeat: no-repeat;
+      padding-left: 5px;
+      padding-bottom: 10px;
+
+      &::placeholder {
+        color: rgb(182, 175, 175);
+        font-size: 12px;
+      }
+    }
+  }
 }
 
 
