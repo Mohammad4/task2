@@ -43,4 +43,29 @@ header {
   }
 }
 
+@media screen and (max-width: 1460px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    margin: 10px;
+    width: 100%;
+    .stay-image {
+      background-image: url("../images/7.PNG");
+      background-repeat: no-repeat;
+      background-position:left top;
+      margin-right: 10px;
+    }
+    .bed-image {
+      margin-top: 15px;
+      position: relative;
+      margin-top: 10px;
+      margin-left: 0px;
+      margin-right: 10px;
+    }
+  }
+
+}
+
 

@@ -52,4 +52,35 @@ header .bed-image {
   margin-top: 190px;
   margin-left: 400px;
 }
+
+@media screen and (max-width: 1460px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0px;
+    margin: 10px;
+    width: 100%;
+  }
+  header .stay-image {
+    background-image: url("../images/7.PNG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-right: 10px;
+  }
+  header .bed-image {
+    margin-top: 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
