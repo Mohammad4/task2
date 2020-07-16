@@ -56,6 +56,11 @@ header {
     border: 2px solid #e7e7e7;
   }
   .bed-image {
+    background-image: url("../images/6.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 450px;
     position: absolute;
     margin-top: 190px;
     margin-left: 400px;
@@ -71,7 +76,7 @@ main {
     margin-top: 0;
     text-align: center;
     color: rgb(76, 80, 87);
-    margin-bottom:70px ;
+    margin-bottom: 70px;
   }
 
   .box {
@@ -134,11 +139,9 @@ main {
     float: right;
     background-image: url("../images/5.png");
     background-size: contain;
-
     background-repeat: no-repeat;
     height: 250px;
   }
-
 }
 footer {
   position: relative;
@@ -240,18 +243,58 @@ footer {
     margin-left: 0px;
     margin: 10px;
     width: 100%;
+    margin-bottom: 0;
     .stay-image {
+      flex-basis: auto;
       background-image: url("../images/7.PNG");
       background-repeat: no-repeat;
       background-position: left top;
+      width: 450px;
       margin-right: 10px;
     }
     .bed-image {
+      width: 450px;
+      height: 450px;
+      flex-basis: auto;
       margin-top: 15px;
       position: relative;
       margin-top: 10px;
       margin-left: 0px;
       margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1349px) {
+  main {
+    .image1 {
+      background-image: url("../images/1.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      float: left;
+      width: 500px;
+      height: 500px;
+    }
+    .center {
+      margin-left:auto;
+      margin-right:auto;
+     width:50%;
+    }
+    .container {
+
+      .image1 {
+        margin-left: 0;
+      }
+    }
+    .container1 {
+      width: 500px;
+      float: left;
+      clear: both;
+    }
+    .container2 {
+      width: 500px;
+      float: left;
+      clear: left;
     }
   }
 }

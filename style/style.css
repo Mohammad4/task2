@@ -75,6 +75,11 @@ header button {
 }
 
 header .bed-image {
+  background-image: url("../images/6.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 450px;
   position: absolute;
   margin-top: 190px;
   margin-left: 400px;
@@ -300,19 +305,56 @@ footer .submitit input::placeholder {
     margin-left: 0px;
     margin: 10px;
     width: 100%;
+    margin-bottom: 0;
   }
   header .stay-image {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
     background-image: url("../images/7.PNG");
     background-repeat: no-repeat;
     background-position: left top;
+    width: 450px;
     margin-right: 10px;
   }
   header .bed-image {
+    width: 450px;
+    height: 450px;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
     margin-top: 15px;
     position: relative;
     margin-top: 10px;
     margin-left: 0px;
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1349px) {
+  main .image1 {
+    background-image: url("../images/1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    width: 500px;
+    height: 500px;
+  }
+  main .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  main .container .image1 {
+    margin-left: 0;
+  }
+  main .container1 {
+    width: 500px;
+    float: left;
+    clear: both;
+  }
+  main .container2 {
+    width: 500px;
+    float: left;
+    clear: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
