@@ -357,4 +357,37 @@ footer .submitit input::placeholder {
     clear: left;
   }
 }
+
+@media only screen and (max-width: 696px) {
+  main .image1 {
+    background-image: url("../images/1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+  }
+  main .container .image1 {
+    margin-left: 0;
+  }
+  main .container1 .box {
+    width: 250px;
+    height: 250px;
+  }
+  main .container1 .image2 {
+    float: none;
+  }
+  main .container1 .image3 {
+    float: none;
+  }
+  main .container2 .box {
+    width: 250px;
+    height: 250px;
+  }
+  main .container2 .image4 {
+    float: none;
+  }
+  main .container2 .image5 {
+    float: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

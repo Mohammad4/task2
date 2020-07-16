@@ -298,3 +298,35 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 696px) {
+  main {
+    .image1 {
+      background-image: url("../images/1.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 250px;
+      height: 250px;
+    }
+
+    .container {
+
+      .image1 {
+        margin-left: 0;
+      }
+    }
+    .container1 {
+      .box {
+      width: 250px;
+      height: 250px;
+    }
+      .image2 {float:none;}.image3 {float:none;}
+    }
+    .container2 {
+      .box {
+        width: 250px;
+        height: 250px;
+      }
+      .image4 {float:none;}.image5 {float:none;}
+    }
+  }
+}
