@@ -7,155 +7,84 @@ body {
   padding: 0;
   margin: 0;
 }
+
 hr.solid {
   margin-top: 50px;
   width: 80px;
 }
-header {
-  left: 50%;
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  align-self: center;
 
-  margin-top: 84px;
-  margin-left: -350px;
-  margin-bottom: 250px;
 
-  .stay-image {
-    z-index: -1;
-    background-image: url("../images/7.PNG");
-    background-repeat: no-repeat;
-    background-position: right top;
-    width: 600px;
-    height: 450px;
-    box-shadow: 0 0 5px #888888;
-  }
-  h1 {
-    margin: 10px;
-    font-size: 50px;
-    color: rgb(76, 80, 87);
-    margin-left: 31px;
-    margin-bottom: 50px;
-    padding-top: 40px;
-  }
-  p {
-    margin-left: 31px;
-    margin-bottom: 33px;
-    width: 356px;
-    height: 190px;
-    color: rgb(103, 107, 113);
-  }
-  button {
-    width: 130px;
-    height: 48px;
-    border-radius: 25px;
-    margin-left: 31px;
-    background-color: white;
-    outline: none;
-    border: 2px solid #e7e7e7;
-  }
-  .bed-image {
-    background-image: url("../images/6.PNG");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 450px;
-    position: absolute;
-    margin-top: 190px;
-    margin-left: 400px;
-  }
-}
 
-main {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 100px;
-  h1 {
-    font-size: 50px;
-    margin-top: 0;
-    text-align: center;
-    color: rgb(76, 80, 87);
-    margin-bottom: 70px;
-  }
+.section1 {
+  margin: 100px;
+  margin-bottom: 150px;
 
-  .box {
-    height: 240px;
-    width: 240px;
-    margin-bottom: 10px;
-    /* float: left; */
-  }
-  .image1 {
-    background-image: url("../images/1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 20px;
-    float: left;
-    width: 500px;
-    height: 500px;
-  }
-  .container {
-    .image1 {
-      margin-left: 190px;
+  section {
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+
+    .stay-image {
+      z-index: -1;
+      background-image: url("../images/7.PNG");
+      background-repeat: no-repeat;
+      background-position: right top;
+      width: 750px;
+      height: 600px;
+      box-shadow: 0 0 5px #888888;
+
+      h1 {
+        padding-top: 20px;
+        padding-left: 60px;
+        font-size: 70px;
+        color: rgb(76, 80, 87)
+      }
+
+      p {
+        font-size: 15px;
+        padding-left: 60px;
+        width: 300px;
+        height: 190px;
+        color: rgb(103, 107, 113);
+      }
+
+      button {
+        width: 140px;
+        height: 55px;
+        border-radius: 25px;
+        margin-left: 60px;
+        background-color: white;
+        outline: none;
+        border: 1px solid #b1abab;
+      }
+    }
+
+    .bed-image {
+      background-image: url("../images/6.PNG");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 750px;
+      height: 600px;
+      position: absolute;
+      margin-top: 230px;
+      margin-left: 400px;
     }
   }
-  .container1 {
-    width: 500px;
-    float: right;
-    margin-right: 135px;
-    padding-right: 10px;
-  }
-  .container2 {
-    margin-right: 135px;
-    padding-right: 10px;
-    width: 500px;
-    float: right;
-    clear: right;
-  }
-  .image2 {
-    float: left;
-    background-image: url("../images/2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 250px;
-  }
-  .image3 {
-    float: right;
-    background-image: url("../images/3.png");
-    background-size: contain;
-
-    background-repeat: no-repeat;
-    height: 250px;
-  }
-  .image4 {
-    float: left;
-    background-image: url("../images/4.png");
-    background-size: contain;
-
-    background-repeat: no-repeat;
-    height: 250px;
-  }
-  .image5 {
-    float: right;
-    background-image: url("../images/5.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 250px;
-  }
 }
+
 footer {
   position: relative;
   bottom: 0;
   left: 0;
-  height: 382px;
+  height: 465px;
   width: 100%;
   outline: yellow;
   border: none;
   background-size: 100% auto;
-  background-image: linear-gradient(
-      rgba(45, 48, 51, 0.7),
-      rgba(45, 48, 51, 0.7)
-    ),
+  background-image: linear-gradient(rgba(45, 48, 51, 0.7),
+      rgba(45, 48, 51, 0.7)),
     url("../images/mountain.jpg");
 
   .round-button {
@@ -168,7 +97,9 @@ footer {
     border: none;
     color: white;
     outline: none;
+    margin-bottom: 50px;
   }
+
   .submitit {
     display: flex;
     flex-direction: column;
@@ -177,14 +108,15 @@ footer {
     align-items: center;
 
     h1 {
-      font-size: 45px;
+      font-size: 60px;
       margin-bottom: -15px;
       color: white;
     }
 
     h6 {
+      font-size: 13px;
       margin-bottom: 50px;
-      color: white;
+      color: rgb(175, 167, 167);
     }
 
     .texts {
@@ -194,9 +126,11 @@ footer {
       color: rgb(182, 175, 175);
       margin-bottom: 30px;
       font-size: 13px;
+
       .text1 {
         margin-left: auto;
         order: 3;
+
         .right {
           margin-right: 50px;
         }
@@ -205,6 +139,7 @@ footer {
       .text2 {
         margin-right: auto;
         order: 2;
+
         .left {
           margin-left: 50px;
         }
@@ -214,13 +149,11 @@ footer {
     input {
       outline: none;
       border: 0;
-      width: 215px;
+      width: 290px;
       background: transparent;
-      background-image: linear-gradient(
-        to right,
-        rgb(182, 175, 175),
-        rgb(182, 175, 175)
-      );
+      background-image: linear-gradient(to right,
+          rgb(182, 175, 175),
+          rgb(182, 175, 175));
       background-position: 5px calc(100% - 5px);
       background-size: calc(100% - 10px) 2px;
       background-repeat: no-repeat;
@@ -236,97 +169,42 @@ footer {
 }
 
 @media screen and (max-width: 1300px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0px;
-    margin: 10px;
-    width: 100%;
+  .section1 {
+    margin: 0;
     margin-bottom: 0;
-    .stay-image {
-      flex-basis: auto;
-      background-image: url("../images/7.PNG");
-      background-repeat: no-repeat;
-      background-position: left top;
-      width: 450px;
-      margin-right: 10px;
-    }
-    .bed-image {
-      width: 450px;
-      height: 450px;
-      flex-basis: auto;
-      margin-top: 15px;
-      position: relative;
-      margin-top: 10px;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-left: 0px;
-      margin-right: 10px;
+      margin: 10px;
+      width: 100%;
+
+      .stay-image {
+        flex-basis: auto;
+        background-image: url("../images/7.PNG");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 450px;
+        height: 500px;
+        margin-right: 10px;
+      }
+
+      .bed-image {
+        width: 450px;
+        height: 300px;
+        flex-basis: auto;
+        margin-top: 15px;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 10px;
+      }
     }
   }
 }
 
-@media screen and (max-width: 1349px) {
-  main {
-    .image1 {
-      background-image: url("../images/1.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      float: left;
-      width: 500px;
-      height: 500px;
-    }
-    .center {
-      margin-left:auto;
-      margin-right:auto;
-     width:50%;
-    }
-    .container {
+@media screen and (max-width: 1349px) {}
 
-      .image1 {
-        margin-left: 0;
-      }
-    }
-    .container1 {
-      width: 500px;
-      float: left;
-      clear: both;
-    }
-    .container2 {
-      width: 500px;
-      float: left;
-      clear: left;
-    }
-  }
-}
-@media only screen and (max-width: 696px) {
-  main {
-    .image1 {
-      background-image: url("../images/1.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 250px;
-      height: 250px;
-    }
-
-    .container {
-
-      .image1 {
-        margin-left: 0;
-      }
-    }
-    .container1 {
-      .box {
-      width: 250px;
-      height: 250px;
-    }
-      .image2 {float:none;}.image3 {float:none;}
-    }
-    .container2 {
-      .box {
-        width: 250px;
-        height: 250px;
-      }
-      .image4 {float:none;}.image5 {float:none;}
-    }
-  }
-}
+@media only screen and (max-width: 696px) {}

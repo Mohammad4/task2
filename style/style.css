@@ -20,7 +20,12 @@ hr.solid {
   width: 80px;
 }
 
-header {
+.section1 {
+  margin: 100px;
+  margin-bottom: 150px;
+}
+
+.section1 section {
   left: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,147 +36,60 @@ header {
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-top: 84px;
-  margin-left: -350px;
-  margin-bottom: 250px;
 }
 
-header .stay-image {
+.section1 section .stay-image {
   z-index: -1;
   background-image: url("../images/7.PNG");
   background-repeat: no-repeat;
   background-position: right top;
-  width: 600px;
-  height: 450px;
+  width: 750px;
+  height: 600px;
   -webkit-box-shadow: 0 0 5px #888888;
           box-shadow: 0 0 5px #888888;
 }
 
-header h1 {
-  margin: 10px;
-  font-size: 50px;
+.section1 section .stay-image h1 {
+  padding-top: 20px;
+  padding-left: 60px;
+  font-size: 70px;
   color: #4c5057;
-  margin-left: 31px;
-  margin-bottom: 50px;
-  padding-top: 40px;
 }
 
-header p {
-  margin-left: 31px;
-  margin-bottom: 33px;
-  width: 356px;
+.section1 section .stay-image p {
+  font-size: 15px;
+  padding-left: 60px;
+  width: 300px;
   height: 190px;
   color: #676b71;
 }
 
-header button {
-  width: 130px;
-  height: 48px;
+.section1 section .stay-image button {
+  width: 140px;
+  height: 55px;
   border-radius: 25px;
-  margin-left: 31px;
+  margin-left: 60px;
   background-color: white;
   outline: none;
-  border: 2px solid #e7e7e7;
+  border: 1px solid #b1abab;
 }
 
-header .bed-image {
+.section1 section .bed-image {
   background-image: url("../images/6.PNG");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 600px;
-  height: 450px;
+  width: 750px;
+  height: 600px;
   position: absolute;
-  margin-top: 190px;
+  margin-top: 230px;
   margin-left: 400px;
-}
-
-main {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 100px;
-}
-
-main h1 {
-  font-size: 50px;
-  margin-top: 0;
-  text-align: center;
-  color: #4c5057;
-  margin-bottom: 70px;
-}
-
-main .box {
-  height: 240px;
-  width: 240px;
-  margin-bottom: 10px;
-  /* float: left; */
-}
-
-main .image1 {
-  background-image: url("../images/1.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-left: 20px;
-  float: left;
-  width: 500px;
-  height: 500px;
-}
-
-main .container .image1 {
-  margin-left: 190px;
-}
-
-main .container1 {
-  width: 500px;
-  float: right;
-  margin-right: 135px;
-  padding-right: 10px;
-}
-
-main .container2 {
-  margin-right: 135px;
-  padding-right: 10px;
-  width: 500px;
-  float: right;
-  clear: right;
-}
-
-main .image2 {
-  float: left;
-  background-image: url("../images/2.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 250px;
-}
-
-main .image3 {
-  float: right;
-  background-image: url("../images/3.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 250px;
-}
-
-main .image4 {
-  float: left;
-  background-image: url("../images/4.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 250px;
-}
-
-main .image5 {
-  float: right;
-  background-image: url("../images/5.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 250px;
 }
 
 footer {
   position: relative;
   bottom: 0;
   left: 0;
-  height: 382px;
+  height: 465px;
   width: 100%;
   outline: yellow;
   border: none;
@@ -190,6 +108,7 @@ footer .round-button {
   border: none;
   color: white;
   outline: none;
+  margin-bottom: 50px;
 }
 
 footer .submitit {
@@ -210,14 +129,15 @@ footer .submitit {
 }
 
 footer .submitit h1 {
-  font-size: 45px;
+  font-size: 60px;
   margin-bottom: -15px;
   color: white;
 }
 
 footer .submitit h6 {
+  font-size: 13px;
   margin-bottom: 50px;
-  color: white;
+  color: #afa7a7;
 }
 
 footer .submitit .texts {
@@ -259,7 +179,7 @@ footer .submitit .texts .text2 .left {
 footer .submitit input {
   outline: none;
   border: 0;
-  width: 215px;
+  width: 290px;
   background: transparent;
   background-image: -webkit-gradient(linear, left top, right top, from(#b6afaf), to(#b6afaf));
   background-image: linear-gradient(to right, #b6afaf, #b6afaf);
@@ -291,7 +211,11 @@ footer .submitit input::placeholder {
 }
 
 @media screen and (max-width: 1300px) {
-  header {
+  .section1 {
+    margin: 0;
+    margin-bottom: 0;
+  }
+  .section1 section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -305,20 +229,20 @@ footer .submitit input::placeholder {
     margin-left: 0px;
     margin: 10px;
     width: 100%;
-    margin-bottom: 0;
   }
-  header .stay-image {
+  .section1 section .stay-image {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
     background-image: url("../images/7.PNG");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: center;
     width: 450px;
+    height: 500px;
     margin-right: 10px;
   }
-  header .bed-image {
+  .section1 section .bed-image {
     width: 450px;
-    height: 450px;
+    height: 300px;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
     margin-top: 15px;
@@ -326,68 +250,6 @@ footer .submitit input::placeholder {
     margin-top: 10px;
     margin-left: 0px;
     margin-right: 10px;
-  }
-}
-
-@media screen and (max-width: 1349px) {
-  main .image1 {
-    background-image: url("../images/1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    float: left;
-    width: 500px;
-    height: 500px;
-  }
-  main .center {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  main .container .image1 {
-    margin-left: 0;
-  }
-  main .container1 {
-    width: 500px;
-    float: left;
-    clear: both;
-  }
-  main .container2 {
-    width: 500px;
-    float: left;
-    clear: left;
-  }
-}
-
-@media only screen and (max-width: 696px) {
-  main .image1 {
-    background-image: url("../images/1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 250px;
-    height: 250px;
-  }
-  main .container .image1 {
-    margin-left: 0;
-  }
-  main .container1 .box {
-    width: 250px;
-    height: 250px;
-  }
-  main .container1 .image2 {
-    float: none;
-  }
-  main .container1 .image3 {
-    float: none;
-  }
-  main .container2 .box {
-    width: 250px;
-    height: 250px;
-  }
-  main .container2 .image4 {
-    float: none;
-  }
-  main .container2 .image5 {
-    float: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
