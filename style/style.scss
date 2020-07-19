@@ -13,8 +13,6 @@ hr.solid {
   width: 80px;
 }
 
-
-
 .section1 {
   margin: 100px;
   margin-bottom: 150px;
@@ -22,7 +20,6 @@ hr.solid {
   justify-content: center;
 
   section {
-
     display: flex;
     align-items: center;
     justify-self: center;
@@ -42,7 +39,7 @@ hr.solid {
         padding-top: 20px;
         padding-left: 60px;
         font-size: 70px;
-        color: rgb(76, 80, 87)
+        color: rgb(76, 80, 87);
       }
 
       p {
@@ -96,7 +93,6 @@ hr.solid {
       flex-direction: row;
       justify-content: center;
 
-
       .image {
         padding-top: 4px;
         margin-left: 70px;
@@ -111,7 +107,6 @@ hr.solid {
         width: 542px;
         height: 542px;
         margin-right: 60px;
-
 
         .img {
           padding: 5px;
@@ -130,8 +125,10 @@ footer {
   outline: yellow;
   border: none;
   background-size: 100% auto;
-  background-image: linear-gradient(rgba(45, 48, 51, 0.7),
-      rgba(45, 48, 51, 0.7)),
+  background-image: linear-gradient(
+      rgba(45, 48, 51, 0.7),
+      rgba(45, 48, 51, 0.7)
+    ),
     url("../images/mountain.jpg");
 
   .round-button {
@@ -198,9 +195,11 @@ footer {
       border: 0;
       width: 290px;
       background: transparent;
-      background-image: linear-gradient(to right,
-          rgb(182, 175, 175),
-          rgb(182, 175, 175));
+      background-image: linear-gradient(
+        to right,
+        rgb(182, 175, 175),
+        rgb(182, 175, 175)
+      );
       background-position: 5px calc(100% - 5px);
       background-size: calc(100% - 10px) 2px;
       background-repeat: no-repeat;
@@ -250,8 +249,79 @@ footer {
       }
     }
   }
+
+  .section2 {
+    section {
+      .center {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .image {
+          align-self: center;
+          padding-top: 0;
+          margin-left: 0;
+        }
+
+        .images {
+          align-self: center;
+          padding-left: 0;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+
+          width: 542px;
+          height: 542px;
+          margin-right: 0;
+
+          .img {
+            padding: 5.5px;
+          }
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 1349px) {}
+@media only screen and (max-width: 696px) {
+  .section2 {
+    section {
+      .center {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
 
-@media only screen and (max-width: 696px) {}
+        .image {
+          align-items: center;
+          padding-top: 0;
+          margin-left: 10px;
+          max-width:  250px;
+          max-height: 250px;
+          margin-bottom: 10px;
+          .img1 {
+            max-width: 260px;
+            max-height: 250px;
+          }
+        }
+
+        .images {
+          padding-left: 0;
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column;
+
+          width: 250px;
+          height: 250px;
+          margin-right: 0;
+          margin-bottom: 800px;
+
+          .img {
+            padding: 5.5px;
+          }
+        }
+      }
+    }
+  }
+}

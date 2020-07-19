@@ -309,5 +309,96 @@ footer .submitit input::placeholder {
     margin-left: 0px;
     margin-right: 10px;
   }
+  .section2 section .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section2 section .center .image {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 0;
+    margin-left: 0;
+  }
+  .section2 section .center .images {
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 542px;
+    height: 542px;
+    margin-right: 0;
+  }
+  .section2 section .center .images .img {
+    padding: 5.5px;
+  }
+}
+
+@media only screen and (max-width: 696px) {
+  .section2 section .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section2 section .center .image {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0;
+    margin-left: 10px;
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 10px;
+  }
+  .section2 section .center .image .img1 {
+    max-width: 260px;
+    max-height: 250px;
+  }
+  .section2 section .center .images {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 250px;
+    height: 250px;
+    margin-right: 0;
+    margin-bottom: 800px;
+  }
+  .section2 section .center .images .img {
+    padding: 5.5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
