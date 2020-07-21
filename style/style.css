@@ -22,7 +22,7 @@ hr.solid {
 
 .section1 {
   margin: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,6 +32,7 @@ hr.solid {
 }
 
 .section1 section {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,28 +42,31 @@ hr.solid {
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
+  top: 100px;
+  right: 34%;
+  margin-bottom: 100px;
 }
 
-.section1 section .stay-image {
+.section1 section .main-image {
   z-index: -1;
   background-image: url("../images/7.PNG");
   background-repeat: no-repeat;
   background-position: right top;
   width: 750px;
   height: 600px;
-  margin-right: 300px;
+  right: 100%;
   -webkit-box-shadow: 0 0 5px #888888;
           box-shadow: 0 0 5px #888888;
 }
 
-.section1 section .stay-image h1 {
+.section1 section .main-image h1 {
   padding-top: 20px;
   padding-left: 60px;
   font-size: 70px;
   color: #4c5057;
 }
 
-.section1 section .stay-image p {
+.section1 section .main-image p {
   font-size: 15px;
   padding-left: 60px;
   width: 300px;
@@ -70,7 +74,7 @@ hr.solid {
   color: #676b71;
 }
 
-.section1 section .stay-image button {
+.section1 section .main-image button {
   width: 140px;
   height: 55px;
   border-radius: 25px;
@@ -80,15 +84,15 @@ hr.solid {
   border: 1px solid #b1abab;
 }
 
-.section1 section .bed-image {
+.section1 section .poped-image {
   background-image: url("../images/6.PNG");
   background-size: contain;
   background-repeat: no-repeat;
   width: 700px;
   height: 600px;
   position: absolute;
-  margin-top: 230px;
-  margin-left: 370px;
+  right: -330px;
+  bottom: -240px;
 }
 
 .section2 {
@@ -270,10 +274,10 @@ footer .submitit input::placeholder {
 
 @media screen and (max-width: 1300px) {
   .section1 {
-    margin: 0;
-    margin-bottom: 0;
+    margin-bottom: 900px;
   }
   .section1 section {
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -285,10 +289,10 @@ footer .submitit input::placeholder {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 0px;
+    right: 42%;
     margin: 10px;
-    width: 100%;
   }
-  .section1 section .stay-image {
+  .section1 section .main-image {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
     background-image: url("../images/7.PNG");
@@ -296,18 +300,20 @@ footer .submitit input::placeholder {
     background-position: center;
     width: 450px;
     height: 500px;
-    margin-right: 10px;
+    top: 0;
+    margin: 0;
+    margin-right: -320px;
+    margin-bottom: 20px;
   }
-  .section1 section .bed-image {
+  .section1 section .poped-image {
     width: 450px;
-    height: 300px;
+    height: 350px;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
-    margin-top: 15px;
     position: relative;
-    margin-top: 10px;
-    margin-left: 0px;
-    margin-right: 10px;
+    bottom: 0;
+    right: 0;
+    left: 36%;
   }
   .section2 section .center {
     display: -webkit-box;
@@ -353,6 +359,9 @@ footer .submitit input::placeholder {
 }
 
 @media only screen and (max-width: 696px) {
+  .section1 section {
+    right: 34%;
+  }
   .section2 section .center {
     display: -webkit-box;
     display: -ms-flexbox;
